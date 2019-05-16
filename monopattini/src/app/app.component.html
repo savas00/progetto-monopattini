@@ -1,0 +1,11 @@
+<button(click)="change()">vedi/nascondi</button>
+<app-home *ngIf="log"[variabili]="utenti"></app-home>
+<form>
+  <input #user>
+  <input #email>
+  <input #psw>
+  <input #telefono>
+  <input #nome>
+  <button (click)="send(user)"> INVIA </button><br>
+  <p *ngfor="let utente of utenti">{{utente}}</p>
+</form>
